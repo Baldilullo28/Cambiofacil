@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Monedas</h1>
+    </header>
+
+    <main>
+        <form>
+            <h2>Convertir</h2>
+            <label for="moneda-origen">Moneda de origen:</label>
+            <select id="moneda-origen">
+                <option value="euro">Euro</option>
+                <option value="dolar">Dólar</option>
+                <option value="pesos argentinos">Pesos Argentinos</option>
+            </select>
+
+            <label for="moneda-destino">Moneda de destino:</label>
+            <select id="moneda-destino">
+                <option value="euro">Euro</option>
+                <option value="dolar">Dólar</option>
+                <option value="pesos argentinos">Pesos Argentinos</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" id="cantidad" placeholder="Ingrese la cantidad a convertir">
+
+            <button type="button" onclick="convertir()">Convertir</button>
+
+            <div id="resultado"></div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>
